@@ -1,0 +1,15 @@
+// BLog
+.blog-card {
+    color: #fff;
+    border-top: 3px solid ;
+    margin-bottom: 0.5rem;
+}  
+.blog article:first-of-type .blog-card{
+    border-top-color: #3FA796;
+}
+.blog article:nth-of-type(2) .blog-card{
+    border-top-color: #FF5677;
+}
+.blog article:last-of-type .blog-card{
+    border-top-color: #ba68c8;
+}

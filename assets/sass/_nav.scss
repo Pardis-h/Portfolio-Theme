@@ -1,0 +1,68 @@
+// navbar Css
+.navbar-brand{
+    // padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    span{
+        font-size: 5rem;
+        font-weight: 800;
+        font-style: italic;
+    }
+    span:first-of-type{
+        color: #ba68c8;
+        z-index: 2;
+        margin-left: 2rem;
+    }
+    span:last-of-type{
+        margin-left: -2rem;
+        color: #fff;
+        position: absolute;
+    }
+    p:first-of-type{
+        font-size: .8rem;
+    }
+    p:last-of-type{
+        font-size: 1rem;
+        color: #ccc;
+    }
+}
+@media screen and (min-width:992px) {
+    .nav-header{
+        width: 11rem;
+        height: 100vh;
+        position: fixed;
+        lefT: 0;
+        top: 0;
+        right: auto;
+        bottom: 0;
+        // border-right: 1px solid #4a4a4a;
+        box-shadow: 0px 3px 13px 0px #2d2d2d;
+        padding: 0;
+        .nav-wrapper , .navbar-collapse,.navbar-expand-lg .navbar-nav{
+            flex-direction: column;
+        }
+        .nav-wrapper{
+            align-items: start;
+            padding: 0;
+        }
+        .navbar-brand{
+            width: 100%;
+            border-bottom: 1px solid #2d2d2d;
+        }
+        .navbar-collapse{
+            padding: 1rem;
+        }
+        
+    }
+    .pl-custom {
+        padding-left: 13.5rem;
+    }
+
+}
+@media screen and (max-width:991px) {
+    .navbar-brand p{
+        display: none;
+    }
+}

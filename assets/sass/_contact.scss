@@ -1,0 +1,21 @@
+// Contact Me
+.contact-me form{
+    input , textarea{
+        background-color: #75797a7a;
+        border: none;
+        padding: 12px 20px;
+        transition: ease;
+        &:focus{
+            border-color: #ba68c8;
+            background-color: #75797a7a;
+            box-shadow: 0 0 0 0.25rem #bb69c940;
+            &::placeholder{
+                color: #fff;
+            }
+        }
+        &::placeholder{
+            color: #8d8d8d;
+            transition: ease;
+        } 
+    }
+}
