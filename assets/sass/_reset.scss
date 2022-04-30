@@ -174,8 +174,8 @@ h1 ,h2 {
 .pt-120{
     padding-top: 120px;
 }
-.pt-150{
-    padding-top: 150px;
+.pt-170{
+    padding-top: 170px;
 }
 @media screen and (min-width:992px) {
     .mt-m60{
@@ -249,10 +249,11 @@ h1 ,h2 {
     }
     &:active{
         top: 1rem;
-    }
-    
+    } 
 }
-
+.btn-active::before{
+    color: rgb(255, 251, 0);
+}
 .scroll-down{
     i{
         font-size: 32px;
@@ -302,7 +303,18 @@ h1 ,h2 {
     .breadcrumb a{
         color: #212529;
     }
+    .bg-text-custom{
+        color: #ba68c8;
+    }
+    .about-me .tagcloud--item:hover{
+        color: #8d8d8d!important;
+    }
+    .section-desc{
+        margin-bottom: 1.2rem!important;
+    }
 }
 .ad-dark{
     color: #8d8d8d!important;
 }
+
+

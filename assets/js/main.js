@@ -21,6 +21,7 @@ function myFunction() {
 // Dark Btn
 document.getElementById('darkBtn').addEventListener("click", function(){ 
   // console.log(document.getElementsByClassName(".navbar"));
+  document.getElementById('darkBtn').classList.toggle('btn-active');
   document.getElementsByTagName("body")[0].classList.toggle('bg-dark');
   document.getElementsByTagName("body")[0].classList.toggle('text-light');
   document.getElementsByTagName("body")[0].classList.toggle('bg-light-custom');
