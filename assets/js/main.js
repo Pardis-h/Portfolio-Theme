@@ -3,7 +3,7 @@ const myTags = [
 ,   'React', 'git',
     'Wordpress', 'PHP', 'Gulp',
     'Sass', 'MySQL', 'jQuery',
-    'Figma' , 'AdobeXD',
+    'Figma' , 'AdobeXD', 'English'
 ];
 let tagCloud = TagCloud('.content', myTags,{
 
@@ -33,3 +33,5 @@ rootEl.addEventListener('click', function clickEventHandler(e) {
         // your code here
     }
 }); 
+
+// Dark Btn

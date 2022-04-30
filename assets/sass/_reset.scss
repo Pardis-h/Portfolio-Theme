@@ -20,6 +20,7 @@
 }
 a{
     text-decoration: none;
+    color: #eee;
 }
 
 /* Reapply the pointer cursor for anchor tags */
@@ -30,6 +31,8 @@ a, button {
 /* Remove list styles (bullets/numbers) */
 ol, ul, menu {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* For images to not be able to exceed their container */
@@ -113,7 +116,7 @@ h1 ,h2 {
     margin-bottom: 1.5rem;
     line-height: 2;
 }
-.bg-text-custom,.bg-text-custom-2{
+.bg-text-custom,.bg-text-custom-2,.bg-text-custom-3{
     -webkit-text-stroke: 1px #f2f2f2;
     color: transparent;
     font-weight: 700;
@@ -132,9 +135,27 @@ h1 ,h2 {
     top: -27%;
     -webkit-text-stroke: 1px #ba68c8;
 }
-// Margin
-.mb-100{
-    margin-bottom: 100px;
+.bg-text-custom-3 {
+    left: 18%;
+    right: unset;
+    top: -5%;
+    -webkit-text-stroke: 1px #ba68c8;
+}
+// Margin and Padding
+.mb-70{
+    margin-bottom: 70px;
+}
+.pt-25{
+    padding-top: 25px;
+}
+.pt-50{
+    padding-top: 50px;
+}
+.pt-70{
+    padding-top: 70px;
+}
+.pt-120{
+    padding-top: 120px;
 }
 
 // Btn
@@ -169,5 +190,32 @@ h1 ,h2 {
         transition-property: transform;
         transition-duration: 0.3s;
         transition-timing-function: ease-out;
+    }
+}
+.darkBtn{
+    position: fixed;
+    z-index: 3;
+    top: 1rem;
+    right: 1rem;
+    color: gray;
+    cursor: pointer;
+    i{
+        font-size: 24px;
+    }
+    i.uil-sun{
+        display: none;
+    }
+    i.uil-moon{
+        transition: .5s ease;
+        &:hover{
+            color: yellow;
+        }
+    }
+}
+
+.scroll-down{
+    i{
+        font-size: 32px;
+        color: #ba68c8;
     }
 }

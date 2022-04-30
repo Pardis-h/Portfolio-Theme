@@ -14,7 +14,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Pardis Haghdoust</title>
 </head>
-<body class="bg-dark text-light">
+<body class="bg-dark text-light ">
+    <span class="darkBtn">
+        <i class="uil uil-sun"></i>
+        <i class="uil uil-moon"></i>
+    </span>
     <!-- Header Start -->
     <header class="container nav-header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -27,7 +31,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse  navbar-collapse" id="navbarText">
+                <div class="collapse  navbar-collapse justify-content-between" id="navbarText">
                     <ul class="navbar-nav me-auto mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#hero-section">Home</a>
@@ -45,6 +49,20 @@
                             <a class="nav-link" href="#contact-me">Contact Me</a>
                         </li>
                     </ul>   
+                    <ul class="social">
+                        <li>
+                            <a href=""><i class="uil uil-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="uil uil-github"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="uil uil-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="uil uil-twitter"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -52,7 +70,7 @@
     <!-- Header End -->
 
     <!-- Hero Section Start -->
-    <div class="container-fluid hero pl-custom mb-100" id="hero-section">
+    <div class="container-fluid hero pl-custom mb-70" id="hero-section">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
@@ -70,15 +88,15 @@
     <!-- Hero Section End -->
 
     <!-- Portfolio Start -->
-    <section class="container-fluid portfolio pl-custom mb-100" id="portfolio">
+    <section class="container-fluid portfolio pl-custom mb-70 pt-50" id="portfolio">
         <div class="container">
-            <div class="row position-relative">
+            <div class="row g-3 position-relative">
                 <span class="bg-text-custom">Works.</span>
-                <div class="col-10">
+                <div class="col-9 col-lg-10">
                     <h2 class="section-title">My Portfolio</h2>
                     <p class="section-desc">A small gallery of my recent project</p>
                 </div>
-                <div class="col-2 d-flex align-items-center justify-content-end">
+                <div class="col-3 col-lg-2 d-flex align-items-center justify-content-end">
                     <a href="" class="custom-btn">See More!</a>
                 </div>
                 <div class="col-12 col-lg-4">
@@ -114,15 +132,15 @@
     <!-- Portfolio End -->
 
     <!-- About me Start -->
-    <section class="container-fluid about-me pl-custom mb-100" id="about-me">
+    <section class="container-fluid about-me pl-custom pt-70" id="about-me">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-5">
+                <div class="col-12 col-lg-5 d-flex flex-column justify-content-center align-items-start">
                     <h2 class="section-title-2">About Me</h2>
                     <p class="section-desc">
                         Passionate Front-End developer with over 2 years of experience. Extensively worked developing Responsive Web Applications. Strong experience in development of web applications for using HTML5, CSS3, Bootstrap, Sass, JavaScript, JQuery and Recently I've started learning React. Moderate knowledge and experience with WordPress development and theming. I'm always willing to learn new traits . I work well both independently and as part of a team.
                     </p>
-                    <a href="" class="custom-btn">See More!</a>
+                    <a href="about-us.html" class="custom-btn">See More!</a>
                 </div>
                 <div class="col-12 col-lg-7 position-relative">
                     <span class="content"></span>
@@ -133,7 +151,7 @@
     <!-- About me End -->
 
     <!-- Blog Start -->
-    <section class="container-fluid blog pl-custom mb-100" id="blog">
+    <section class="container-fluid blog pl-custom mb-70 pt-120" id="blog">
         <div class="container">
             <div class="row position-relative">
                 <span class="bg-text-custom-2">Blog.</span>
@@ -186,7 +204,7 @@
     <!-- Blog End -->
 
     <!-- Contact Me start -->
-    <section class="container-fluid contact-me pl-custom mb-100" id="contact-me">
+    <section class="container-fluid contact-me pl-custom mb-70 pt-25" id="contact-me">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">

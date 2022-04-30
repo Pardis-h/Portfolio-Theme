@@ -124,3 +124,84 @@
     
     }
 }
+.job-experience{
+    padding: 50px;
+    // max-width: 500px;
+    >li {
+        display: flex;
+        margin-bottom: 1rem;
+        padding-bottom: 1.3rem;
+        border-bottom: 1px solid rgb(58, 58, 58);
+        .company-name{
+            flex-basis: 40%;
+            >p{
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+            p:nth-of-type(2),span{
+                font-size: .9rem;
+                margin-bottom: .5rem;
+            }
+        }
+        .job-details{
+            flex-basis: 60%;
+            >p{
+                font-size: 1.5rem;
+            }
+            ul li{
+                font-size: 1rem;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    >li:last-of-type{
+        border-bottom: none;
+    }
+}
+.eduction{
+    padding: 50px;
+    li{
+        display: flex;
+        margin-bottom: 20px;
+        margin-bottom: 1rem;
+        padding-bottom: 1.3rem;
+        border-bottom: 1px solid rgb(58, 58, 58);
+        >div{
+            flex-basis: 50%;
+        }
+        >p{
+            flex-basis: 50%;
+        }
+        p{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        span{
+            font-size: .9rem;
+            margin-bottom: .5rem;
+        }
+    }
+    >li:last-of-type{
+        border-bottom: none;
+    }
+}
+.contact-info{
+    padding: 50px;
+    ul.social i:hover{
+        color: #3FA796;
+    }
+}
+.contact-list{
+    li{
+        font-size: .9rem;
+        margin-bottom: .5rem;
+        i{
+            font-size: 20px;
+            color: #989898;
+            padding-right: 8px;
+            &::before{
+                vertical-align: -2px;
+            }
+        }
+    }
+}
