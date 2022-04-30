@@ -124,6 +124,33 @@
     
     }
 }
+.me{
+    padding-left: 50px;
+    padding-right: 50px;
+    img{
+        border-radius: 50%;
+    }
+    h1{
+        padding-left: 1rem;
+        p{
+            margin: 0;
+            font-weight: 500;
+        }
+    }
+    h4{
+        font-weight: 400;
+    }
+    h3{
+        background-color: #ba68c8;
+        color: #fff;
+        padding: 12px 20px;
+    }
+}
+.visit,.section-desc{
+    a{
+        color: #ba68c8;
+    }
+}
 .job-experience{
     padding: 50px;
     // max-width: 500px;
@@ -204,4 +231,24 @@
             }
         }
     }
+}
+
+.skills-bar{
+    padding: 20px;
+    li{
+        margin-bottom: 20px;
+        .progress{
+            height: 2px;
+        }
+        &:nth-child(odd) .progress-bar{
+            background-color: #FF5677;
+        }
+        &:nth-child(even) .progress-bar{
+            background-color: #3FA796;
+        }
+    }
+}
+.progress-bar{
+    animation: fill 2s forwards;
+    width: 0;
 }

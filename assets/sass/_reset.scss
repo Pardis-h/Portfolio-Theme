@@ -122,7 +122,7 @@ h1 ,h2 {
     margin-bottom: 1.5rem;
     line-height: 2;
 }
-.bg-text-custom,.bg-text-custom-2,.bg-text-custom-3,.bg-text-custom-4{
+.bg-text-custom,.bg-text-custom-2,.bg-text-custom-3,.bg-text-custom-4,.bg-text-custom-5 {
     -webkit-text-stroke: 1px #f2f2f2;
     color: transparent;
     font-weight: 700;
@@ -142,15 +142,20 @@ h1 ,h2 {
     -webkit-text-stroke: 1px #ba68c8;
 }
 .bg-text-custom-3 {
-    left: 18%;
     right: unset;
-    top: -5%;
+    top: -19%;
     -webkit-text-stroke: 1px #ba68c8;
 }
 .bg-text-custom-4 {
     left: -1%;
     right: unset;
     top: -28%;
+    -webkit-text-stroke: 1px #ba68c8;
+}
+.bg-text-custom-5 {
+    left: 24%;
+    right: unset;
+    top: -4%;
     -webkit-text-stroke: 1px #ba68c8;
 }
 // Margin and Padding
@@ -171,6 +176,11 @@ h1 ,h2 {
 }
 .pt-150{
     padding-top: 150px;
+}
+@media screen and (min-width:992px) {
+    .mt-m60{
+        margin-top: -60px;
+    }
 }
 // Btn
 .custom-btn{
@@ -206,25 +216,41 @@ h1 ,h2 {
         transition-timing-function: ease-out;
     }
 }
-.darkBtn{
+#darkBtn{
     position: fixed;
     z-index: 3;
-    top: 1rem;
-    right: 1rem;
+    top: .5rem;
+    left: 1rem;
     color: gray;
     cursor: pointer;
-    i{
+    position: relative;
+    transition: 0.5s ease;
+    &::before{
+        content: '\e90b';
+        font-family: "unicons-line";
         font-size: 24px;
+        transform: rotate(180deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s ease;
     }
-    i.uil-sun{
-        display: none;
+    &:after{
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 2rem;
+        background-color: gray;
+        left: 0.7rem;
+        top: -17px;
     }
-    i.uil-moon{
-        transition: .5s ease;
-        &:hover{
-            color: yellow;
-        }
+    &:hover::before{
+        color: yellow;
     }
+    &:active{
+        top: 1rem;
+    }
+    
 }
 
 .scroll-down{
@@ -238,4 +264,45 @@ h1 ,h2 {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    #darkBtn {
+        top: -2.5rem!important;
+    }
+}
+.bg-light-custom{
+    .hero-desc ,.section-desc{
+        color: gray;
+    }
+    .project-card h5{
+        color: #212529;
+    }
+    .job-experience > li,.eduction li{
+        border-color: #eee!important;
+    }
+    .nav-header,.project-card{
+        box-shadow: 3px 5px 10px 0px #00000014!important;
+    }
+    .project-card{
+        border: none;
+    }
+    .blog-card{
+        box-shadow: 2px 2px 10px 0px #0000001c!important;
+        border-bottom: none;
+        border-left: none;
+        border-radius: none;
+    }
+    aside ul li a{
+        color: #212529;
+    }
+    .contact-me form input, .contact-me form textarea {
+        background-color: #75797a14!important;
+    }
+    .contact-me form input:focus::placeholder, .contact-me form textarea:focus::placeholder{
+        color: #8d8d8d!important;
+    }
+    .breadcrumb a{
+        color: #212529;
+    }
+}
+.ad-dark{
+    color: #8d8d8d!important;
 }

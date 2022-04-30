@@ -43,6 +43,17 @@ ul.social{
         }
     }
 }
+.text-dark-custom{
+     .nav-link,.navbar-brand span:last-of-type,.navbar-brand p:last-of-type{
+        color: #212529;
+    }
+    .navbar-brand p:first-of-type{
+        color: gray;
+    }
+    .navbar-brand{
+        border-bottom: 1px solid #eee!important;
+    }
+}
 @media screen and (min-width:992px) {
     .nav-header{
         width: 11rem;
