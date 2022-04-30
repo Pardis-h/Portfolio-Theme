@@ -6,7 +6,7 @@
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
     - The "symbol *" part is to solve Firefox SVG sprite bug
  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700;1,800&display=swap");
 *:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
   all: unset;
   display: revert;
@@ -92,9 +92,17 @@ meter {
   -webkit-user-drag: element;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 h1, h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
+}
+
+.nav-header .navbar-brand span {
+  font-family: 'Poppins', sans-serif;
 }
 
 .text-primary-color {
@@ -266,6 +274,12 @@ h1, h2 {
 .scroll-down i {
   font-size: 32px;
   color: #ba68c8;
+}
+
+.coming-soon {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .navbar-brand {
@@ -802,6 +816,20 @@ aside ul li:hover:nth-child(even) a {
 
 aside ul li:hover:nth-child(odd) a {
   color: #3FA796;
+}
+
+.breadcrumb {
+  font-family: "unicons-line";
+  --bs-breadcrumb-divider: '\eb9f';
+}
+
+.breadcrumb a {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.breadcrumb a:hover {
+  color: #ba68c8;
 }
 
 .contact-me form input, .contact-me form textarea {

@@ -39,3 +39,13 @@ aside {
         }
     }
 } 
+.breadcrumb{
+    font-family: "unicons-line";
+    --bs-breadcrumb-divider: '\eb9f';
+    a{
+        transition: .5s ease;
+        &:hover{
+            color: #ba68c8;
+        }
+    }
+}
