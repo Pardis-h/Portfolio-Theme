@@ -1,0 +1,254 @@
+.about-me{
+    .tagcloud {
+        font-family: 'Poppins', sans-serif;  
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 10%;
+      }
+      .tagcloud--item:hover {
+        color: #fff;
+        cursor: pointer;
+      }
+    .skills{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .skills li{
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        animation: animate 25s linear infinite;
+        bottom: -150px;
+        
+    }
+    
+    .skills li:nth-child(1){
+        left: 25%;
+        width: 80px;
+        height: 80px;
+        animation-delay: 0s;
+    }
+    
+    
+    .skills li:nth-child(2){
+        left: 10%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 2s;
+        animation-duration: 12s;
+    }
+    
+    .skills li:nth-child(3){
+        left: 70%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 4s;
+    }
+    
+    .skills li:nth-child(4){
+        left: 40%;
+        width: 60px;
+        height: 60px;
+        animation-delay: 0s;
+        animation-duration: 18s;
+    }
+    
+    .skills li:nth-child(5){
+        left: 65%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+    }
+    
+    .skills li:nth-child(6){
+        left: 75%;
+        width: 110px;
+        height: 110px;
+        animation-delay: 3s;
+    }
+    
+    .skills li:nth-child(7){
+        left: 35%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 7s;
+    }
+    
+    .skills li:nth-child(8){
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        animation-delay: 15s;
+        animation-duration: 45s;
+    }
+    
+    .skills li:nth-child(9){
+        left: 20%;
+        width: 15px;
+        height: 15px;
+        animation-delay: 2s;
+        animation-duration: 35s;
+    }
+    
+    .skills li:nth-child(10){
+        left: 85%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 0s;
+        animation-duration: 11s;
+    }
+    
+    
+    
+    @keyframes animate {
+    
+        0%{
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+            border-radius: 0;
+        }
+    
+        100%{
+            transform: translateY(-1000px) rotate(720deg);
+            opacity: 0;
+            border-radius: 50%;
+        }
+    
+    }
+}
+.me{
+    padding-left: 50px;
+    padding-right: 50px;
+    img{
+        border-radius: 50%;
+    }
+    h1{
+        padding-left: 1rem;
+        p{
+            margin: 0;
+            font-weight: 500;
+        }
+    }
+    h4{
+        font-weight: 400;
+    }
+    h3{
+        background-color: #ba68c8;
+        color: #fff;
+        padding: 12px 20px;
+    }
+}
+.visit,.section-desc{
+    a{
+        color: #ba68c8;
+    }
+}
+.job-experience{
+    padding: 50px;
+    // max-width: 500px;
+    >li {
+        display: flex;
+        margin-bottom: 1rem;
+        padding-bottom: 1.3rem;
+        border-bottom: 1px solid rgb(58, 58, 58);
+        .company-name{
+            flex-basis: 40%;
+            >p{
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+            p:nth-of-type(2),span{
+                font-size: .9rem;
+                margin-bottom: .5rem;
+            }
+        }
+        .job-details{
+            flex-basis: 60%;
+            >p{
+                font-size: 1.5rem;
+            }
+            ul li{
+                font-size: 1rem;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    >li:last-of-type{
+        border-bottom: none;
+    }
+}
+.eduction{
+    padding: 50px;
+    li{
+        display: flex;
+        margin-bottom: 20px;
+        margin-bottom: 1rem;
+        padding-bottom: 1.3rem;
+        border-bottom: 1px solid rgb(58, 58, 58);
+        >div{
+            flex-basis: 50%;
+        }
+        >p{
+            flex-basis: 50%;
+        }
+        p{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        span{
+            font-size: .9rem;
+            margin-bottom: .5rem;
+        }
+    }
+    >li:last-of-type{
+        border-bottom: none;
+    }
+}
+.contact-info{
+    padding: 50px;
+    ul.social i:hover{
+        color: #3FA796;
+    }
+}
+.contact-list{
+    li{
+        font-size: .9rem;
+        margin-bottom: .5rem;
+        i{
+            font-size: 20px;
+            color: #989898;
+            padding-right: 8px;
+            &::before{
+                vertical-align: -2px;
+            }
+        }
+    }
+}
+
+.skills-bar{
+    padding: 20px;
+    li{
+        margin-bottom: 20px;
+        .progress{
+            height: 2px;
+        }
+        &:nth-child(odd) .progress-bar{
+            background-color: #FF5677;
+        }
+        &:nth-child(even) .progress-bar{
+            background-color: #3FA796;
+        }
+    }
+}
+.progress-bar{
+    animation: fill 2s forwards;
+    width: 0;
+}

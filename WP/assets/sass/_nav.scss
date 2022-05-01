@@ -1,0 +1,107 @@
+// navbar Css
+.navbar-brand{
+    // padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    span{
+        font-size: 5rem;
+        font-weight: 800;
+        font-style: italic;
+    }
+    span:first-of-type{
+        color: #ba68c8;
+        z-index: 2;
+        margin-left: 2rem;
+    }
+    span:last-of-type{
+        margin-left: -2rem;
+        color: #fff;
+        position: absolute;
+    }
+    p:first-of-type{
+        font-size: .8rem;
+    }
+    p:last-of-type{
+        font-size: 1rem;
+        color: #ccc;
+    }
+}
+ul.social{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    i{
+        font-size: 24px;
+        color: #989898;
+        transition:0.5s ease;
+        &:hover{
+            color: #ba68c8;
+        }
+    }
+}
+.navbar-dark {
+    .navbar-nav .nav-link:focus,  .navbar-nav .nav-link:hover ,
+    .navbar-nav .nav-link.active,  .navbar-nav .show>.nav-link{
+       color: #ba68c8;
+   }
+}
+.navbar-nav .nav-link:focus,  .navbar-nav .nav-link:hover ,
+.navbar-nav .nav-link.active,  .navbar-nav .show>.nav-link{
+   color: #ba68c8;
+}
+.text-dark-custom{
+     .nav-link,.navbar-brand span:last-of-type,.navbar-brand p:last-of-type{
+        color: #212529;
+    }
+    .navbar-brand p:first-of-type{
+        color: gray;
+    }
+    .navbar-brand{
+        border-bottom: 1px solid #eee!important;
+    }
+}
+@media screen and (min-width:992px) {
+    .nav-header{
+        width: 11rem;
+        height: 100vh;
+        position: fixed;
+        lefT: 0;
+        top: 0;
+        right: auto;
+        bottom: 0;
+        // border-right: 1px solid #4a4a4a;
+        box-shadow: 3px 5px 10px 0px #00000030;
+        padding: 0;
+        .nav-wrapper , .navbar-collapse,.navbar-expand-lg .navbar-nav{
+            flex-direction: column;
+        }
+        .nav-wrapper{
+            align-items: start;
+            padding: 0;
+        }
+        .navbar-brand{
+            width: 100%;
+            border-bottom: 1px solid #2d2d2d;
+        }
+        .navbar-collapse{
+            padding: 1rem;
+        }
+        nav.navbar, .nav-wrapper ,.navbar-collapse{
+            height: 100%;
+        }
+        
+    }
+    .pl-custom {
+        padding-left: 13.5rem;
+    }
+
+}
+@media screen and (max-width:991px) {
+    .navbar-brand p{
+        display: none;
+    }
+}
