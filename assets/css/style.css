@@ -388,6 +388,10 @@ h1, h2 {
   margin-bottom: 1.2rem !important;
 }
 
+.bg-light-custom .blog-card h5 {
+  color: #212529;
+}
+
 .ad-dark {
   color: #8d8d8d !important;
 }
@@ -977,10 +981,6 @@ a.ad {
 
 .blog-card p {
   color: #a19f9f;
-}
-
-.title-dark h5 {
-  color: #212529;
 }
 
 .blog article:nth-child(odd) .blog-card {

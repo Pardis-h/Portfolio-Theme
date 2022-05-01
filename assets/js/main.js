@@ -1,47 +1,48 @@
 // Skills Bars
-
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
+window.onscroll = function() {mySkillsBar()};
+function mySkillsBar() {
   if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
     let skill = document.getElementsByClassName('progress-bar');
-    for( item in skill){
-        let percent = skill[item].ariaValueNow;
-        skill[item].animate([
+    if (skill.length > 0){
+      for( i in skill){
+        let percent = skill[i].ariaValueNow;
+        skill[i].animate([
             { width: `${percent}%` }, 
           ], {
             duration: 2000,
             fill: 'forwards'
-          });
-        console.log(percent);
-    };
+        });
+      };
+    }
   }
 }
 
 // Dark Btn
 document.getElementById('darkBtn').addEventListener("click", function(){ 
-  // console.log(document.getElementsByClassName(".navbar"));
+
   document.getElementById('darkBtn').classList.toggle('btn-active');
   document.getElementsByTagName("body")[0].classList.toggle('bg-dark');
   document.getElementsByTagName("body")[0].classList.toggle('text-light');
   document.getElementsByTagName("body")[0].classList.toggle('bg-light-custom');
-  document.getElementsByClassName("navbar")[0].classList.toggle('bg-dark');
-  document.getElementsByClassName("navbar")[0].classList.toggle('navbar-dark');
-  document.getElementsByClassName("navbar")[0].classList.toggle('text-dark-custom');
-  // document.getElementsByClassName("ad")[1].classList.toggle('ad-dark');
+  let navbar = document.getElementsByClassName("navbar");
+  if(navbar.length > 0){
+    navbar[0].classList.toggle('bg-dark');
+    navbar[0].classList.toggle('navbar-dark');
+    navbar[0].classList.toggle('text-dark-custom');
+  }
 
   let blogCard = document.getElementsByClassName("blog-card");
-  for( item in blogCard){
-    blogCard[item].classList.toggle('bg-dark');
-    blogCard[item].classList.toggle('title-dark');
-  };
-  document.getElementsByClassName("ad")[0].classList.toggle('ad-dark');
+  if(blogCard.length > 0){
+    for( i in blogCard){
+      blogCard[i].classList.toggle('bg-dark');
+    }
+  }
 
   let AD = document.getElementsByClassName("ad");
-  console.log(AD)
-  for( item in AD){
-    AD[item].classList.toggle('ad-dark');
-  };
+  if(AD.length>0){
+    AD[0].classList.toggle('ad-dark');
+  }
+
  });
 
 // Skill Tags
@@ -52,7 +53,7 @@ const myTags = [
     'Sass', 'MySQL', 'jQuery',
     'Figma' , 'AdobeXD', 'English'
 ];
-let tagCloud = TagCloud('.content', myTags,{
+let tagCloud = TagCloud('.skill-content', myTags,{
 
     // radius in px
     radius: 250,
@@ -69,17 +70,17 @@ let tagCloud = TagCloud('.content', myTags,{
   
     // interact with cursor move on mouse out
     keep: true  
-  }); 
-let colors = ['#ba68c8', '#3FA796', '#FF5677'];
-let random_color = colors[Math.floor(Math.random() * colors.length)];
-document.querySelector('.content').style.color = random_color;
-let rootEl = document.querySelector('.content');
-rootEl.addEventListener('click', function clickEventHandler(e) {
-    if (e.target.className === 'tagcloud--item') {
-        window.open(`https://www.google.com/search?q=${e.target.innerText}`, '_blank');
-        // your code here
-    }
 }); 
-
-
+let skill_content = document.querySelector('.skill-content');
+if(skill_content !== null){
+  let colors = ['#ba68c8', '#3FA796', '#FF5677'];
+  let random_color = colors[Math.floor(Math.random() * colors.length)];
+  skill_content.style.color = random_color;
+  skill_content.addEventListener('click', function clickEventHandler(e) {
+      if (e.target.className === 'tagcloud--item') {
+          window.open(`https://www.google.com/search?q=${e.target.innerText}`, '_blank');
+          // your code here
+      }
+  }); 
+}
 
