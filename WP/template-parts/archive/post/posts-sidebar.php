@@ -3,10 +3,6 @@
     <div class="container">
         <div class="row position-relative">
             <span class="bg-text-custom-4">Blog.</span>
-            <div class="col-12">
-                <!-- <h2 class="section-title">My Blog</h2> -->
-                <!-- <p class="section-desc">blog posts</p> -->
-            </div>
             <main class="row ">
                 <div class="col-12 <?php if (is_active_sidebar('posts-archive-sidebar')) :?>col-lg-8 <?php endif; ?>">
                     <div class="row">

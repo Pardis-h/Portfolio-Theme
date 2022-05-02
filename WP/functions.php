@@ -77,6 +77,19 @@ function myp_register_sidebars()
             'after_sidebar' => '</aside>'
         )
     );
+    register_sidebar(
+        array(
+            'name' => __('Projects Archive Sidebar', 'pas_mph'),
+            'id' => 'projects-archive-sidebar',
+            'description' => __('Widgets in this area will be shown on archive page.', 'pas_mph'),
+            'before_widget' => '',
+            'after_widget' => '',
+            'before_title' => '<h5 class="widgettitle">',
+            'after_title' => '</h5>',
+            'before_sidebar' => '<aside class="col-12 col-lg-4 mt-m60">',
+            'after_sidebar' => '</aside>'
+        )
+    );
 }
 add_action('widgets_init', 'myp_register_sidebars');
 

@@ -60,6 +60,9 @@
 .project-card:hover .card-body{
     display: flex;
 } 
+aside{
+    z-index: 3;
+}
 
 /* Contact Us */
 .wpcf7 form.sent .wpcf7-response-output {

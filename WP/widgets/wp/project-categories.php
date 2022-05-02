@@ -1,11 +1,11 @@
 <?php
 
 
-class Theme_Categories_Widget extends WP_Widget {
+class Theme_Categories_2_Widget extends WP_Widget {
 
 
     public function __construct() {
-        parent::__construct( false, 'Theme Posts Categories Widget' );
+        parent::__construct( false, 'Theme Projects Categories Widget' );
     }
 
 
@@ -15,16 +15,17 @@ class Theme_Categories_Widget extends WP_Widget {
         echo apply_filters( 'widget_title', $instance['title'] );
         echo $args['after_title'];
 
-
-        $categories = get_categories( array(
-            'orderby' => 'name',
-            'parent'  => 0
-        ) );
+        $args = array(
+            'post_type'              => 'project',
+            'post_status'            => 'publish',
+            'taxonomy'               => 'project_categories',            
+            );
+        $cat = get_categories($args);
         ?>
         <div class="cat">
             <ul>
-                <?php
-                foreach ( $categories as $category ) : ?>
+            <?php
+                foreach ( $cat as $category ) : ?>
                     <li>
                         <a href="<?php echo get_category_link( $category->term_id ); ?>">
                             <span><?php echo $category->name; ?></span>
@@ -59,8 +60,8 @@ class Theme_Categories_Widget extends WP_Widget {
     }
 }
 
-function register_myp_categories_widget() {
-    register_widget( 'Theme_Categories_Widget' );
+function register_myp_categories_2_widget() {
+    register_widget( 'Theme_Categories_2_Widget' );
 }
 
-add_action( 'widgets_init', 'register_myp_categories_widget' );
+add_action( 'widgets_init', 'register_myp_categories_2_widget' );
