@@ -6,10 +6,10 @@
 get_header(); ?>
 
      <!-- Hi Start -->
-     <div class="container-fluid pl-custom pt-50 mb-5">
+     <div class="container-fluid pl-custom pt-50 mb-0 mb-lg-5">
         <div class="container">
             <div class="row me">
-                <div class="col-12 col-lg-6 d-flex align-items-center">
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start mb-3 mb-md-0">
                     <div>
                         <h4>Hey, my name is</h4>
                         <h1>
@@ -19,7 +19,7 @@ get_header(); ?>
                         <h3>Web Developer</h3>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/me.jpg" alt="pardis-haghdoust" class="img-fluid">
                 </div>
                 <div class="col-12 text-center">
@@ -70,7 +70,7 @@ get_header(); ?>
                 <div class="col-12">
                     <h2 class="section-title">WORK EXPERIENCE</h2>
                 </div>
-                <ul class="col- 12 job-experience">
+                <ul class="col-12 job-experience">
                     <li>
                         <div class="company-name"> 
                             <p>UnityB</p>
@@ -117,7 +117,7 @@ get_header(); ?>
                 <div class="col-12">
                     <h2 class="section-title">EDUCATION</h2>
                 </div>
-                <ul class="col- 12 eduction">
+                <ul class="col-12 eduction">
                     <li>
                         <div>
                             <p>
@@ -153,7 +153,7 @@ get_header(); ?>
     <!-- Contact Info Start -->
     <div class="container-fluid pl-custom pt-70 mb-70">
         <div class="container">
-            <div class="row contact-info ">
+            <div class="row g-3 contact-info ">
                 <div class="col-12 col-lg-6">
                     <h2 class="section-title">Contact Info</h2>
                     <ul class="contact-list">

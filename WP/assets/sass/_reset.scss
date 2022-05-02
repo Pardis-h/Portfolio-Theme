@@ -162,6 +162,9 @@ h1 ,h2 {
 .mb-70{
     margin-bottom: 70px;
 }
+.mb-100{
+    margin-bottom: 70px;
+}
 .pt-25{
     padding-top: 25px;
 }
@@ -217,13 +220,13 @@ h1 ,h2 {
     }
 }
 #darkBtn{
-    position: fixed;
+    position: absolute;
     z-index: 3;
     top: .5rem;
     left: 1rem;
     color: gray;
     cursor: pointer;
-    position: relative;
+    // position: relative;
     transition: 0.5s ease;
     &::before{
         content: '\e90b';
@@ -322,4 +325,108 @@ h1 ,h2 {
     color: #8d8d8d!important;
 }
 
+// Resposive 
+@media screen and (max-width:991px) {
+    #hero-section{
+        padding-top: .5rem;
+    }
+    #darkBtn{
+        right: 4rem;
+        left: unset;
+    }
+    .hero-title{
+        font-size: 2rem;
+    }
+    .hero-desc{
+        font-size: 1rem;
+    }
+    .section-title , .section-title-2{
+        font-size: 1.7rem;
+        margin-bottom: .5rem;
+    }
+    .section-desc{
+        font-size: .9rem;
+    }
+    .bg-text-custom, .bg-text-custom-2, .bg-text-custom-3, .bg-text-custom-4, .bg-text-custom-5{
+        font-size: 40px;
+        line-height: 2;
+    }
+    .custom-btn{
+        font-size: .8rem;
+    }
+    .bg-text-custom-5{
+        left: 51%;
+    }
+    .pt-25{
+        padding-top: 12px;
+    }
+    .pt-50{
+        padding-top: 25px;
+    }
+    .pt-70{
+        padding-top: 35px;
+    }
+    .mb-70{
+        margin-bottom: 35px;
+    }
+    .mb-100{
+        margin-bottom: 50px;
+    }
+    aside h5{
+        font-size: 1.4rem!important;
+    }
+    .about-me .bg-text-custom-3{
+        line-height: unset;
+    }
+    .bg-text-custom-2{
+        top: -10%;
+    }
+    .job-experience{
+        padding: 10px!important;
+        >li {
+            .company-name > p, .job-details > p{
+                font-size: 1.2rem!important;
+            }
+            .job-details ul li{
+                font-size: .9rem;
+            }
+            .company-name {
+                padding-right: 10px;
+            }
+        }
+    }
+    .eduction{
+        padding: 10px!important;
+        li p{
+            font-size: 1.2rem!important;
+        }
+        li > div{
+            padding-right: 10px;
+        }
+    }
+    .contact-info{
+        padding: 10px!important;
 
+    }
+    .about-me .tagcloud{
+        margin-left: 0!important;
+    }
+    .social{
+        display: none!important;
+    }
+    .social-2{
+        display: flex!important;
+    }
+}
+@media screen and (max-width:768px) {
+    .project-card {
+        max-height: 300px;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width:520px) {
+    .about-me .tagcloud{
+        max-width: 250px;
+        margin-left: 20%!important;
+    }
+}

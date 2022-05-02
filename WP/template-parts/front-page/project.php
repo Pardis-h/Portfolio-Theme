@@ -16,7 +16,7 @@ if ( $query_projects  ) {
     $post_id = $data->ID;
                 $cat = get_the_terms($data->ID, 'project_categories');
                 ?>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-md-4">
                 <div class="card project-card ">
                     <div class="card-body">
                         <div>

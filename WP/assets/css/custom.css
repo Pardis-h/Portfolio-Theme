@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 /* Nav Menu  */
 .menu-item a{
     display: block;
@@ -17,8 +20,14 @@
 }
 
 /* Blog archive */
-.bg-text-custom-4 {
+/* .bg-text-custom-4 {
     top: -73%;
+} */
+/* .bg-text-custom-4.position-static{
+    line-height: 0;
+} */
+.blog-card{
+    height: 100%;
 }
 .project-card{
     position: relative;

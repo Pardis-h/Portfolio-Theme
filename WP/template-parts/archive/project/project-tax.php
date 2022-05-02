@@ -18,15 +18,14 @@ $query_projects = new WP_Query($args);
 <section class="container-fluid portfolio pl-custom mb-70 pt-50" id="portfolio">
     <div class="container">
         <div class="row position-relative">
-            <span class="bg-text-custom-5">My Works.</span>
             <div class="col-9 col-lg-10">
-                <h2 class="section-title mb-5"> 
+                <h2 class="section-title mb-4 mb-lg-5"> 
                    <?php
                         the_archive_title();
                     ?>
                 </h2>
             </div>
-            <div class="col-12 <?php if (is_active_sidebar('projects-archive-sidebar')) :?>col-lg-8 <?php endif; ?>">
+            <div class="col-12 <?php if (is_active_sidebar('projects-archive-sidebar')) :?>col-lg-8 order-1 order-lg-0<?php endif; ?>">
                     <div class="row g-4">
                         <?php echo get_template_part('template-parts/archive/project/project-loop'); ?>
                     </div>

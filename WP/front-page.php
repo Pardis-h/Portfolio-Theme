@@ -2,10 +2,26 @@
 
 
     <!-- Hero Section Start -->
-    <div class="container-fluid hero pl-custom mb-70" id="hero-section">
-        <div class="container">
+    <div class="container-fluid hero pl-custom mb-100 pt-3 pt-lg-0" id="hero-section">
+        <div class="container position-relative">
+            <div class="text-end position-absolute end-0 top-0">
+                <ul class="social-2">
+                    <li>
+                        <a href="https://linkedin.com/in/pardis-haghdoust"><i class="uil uil-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Pardis-h"><i class="uil uil-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/pardis_haghdoust"><i class="uil uil-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/iampardis_h"><i class="uil uil-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
             <div class="row">
-                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center ">
                     <h1 class="hero-title mb-3">Hi,<br> I'm <span class="text-primary-color">P</span> ardis, <br> Web Developer</h1>
                     <p class="hero-desc">Front End Developer / Wordpress Expert</p>
                 </div>
@@ -20,15 +36,15 @@
     <!-- Hero Section End -->
 
     <!-- Portfolio Start -->
-    <section class="container-fluid portfolio pl-custom mb-70 pt-50" id="portfolio">
+    <section class="container-fluid portfolio pl-custom mb-100 pt-50" id="portfolio">
         <div class="container">
             <div class="row g-3 position-relative">
                 <span class="bg-text-custom">Works.</span>
-                <div class="col-9 col-lg-10">
+                <div class="col-8 col-lg-9">
                     <h2 class="section-title">My Portfolio</h2>
                     <p class="section-desc">A small gallery of my recent project</p>
                 </div>
-                <div class="col-3 col-lg-2 d-flex align-items-center justify-content-end">
+                <div class="col-4 col-lg-3 d-flex align-items-center justify-content-end">
                     <a href="http://pardis-haghdoust.test/project/" class="custom-btn">See More!</a>
                 </div>
                 <?php 
@@ -81,15 +97,15 @@
     <!-- Contact Me start -->
     <section class="container-fluid contact-me pl-custom mb-70 pt-25" id="contact-me">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <h2 class="section-title">Contact Me</h2>
+            <div class="row g-3">
+                <div class="col-12 col-lg-6 order-1 order-lg-0">
+                    <h2 class="section-title ">Contact Me</h2>
                     <p class="section-desc">A small gallery of my recent project</p>
                     <?php 
                         echo apply_shortcodes( '[contact-form-7 id="25" title="Contact"]' ); 
                     ?>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 order-0 order-lg-1">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact.png" alt="" class="img-fluid">
                     <a href="https://storyset.com/web" class="ad">Web illustrations by Storyset</a>
                 </div>

@@ -6,7 +6,7 @@ $cat_url = get_term_link($cat[0]->term_id);
     <!-- single portfolio Start -->
     <div class="container-fluid pl-custom pt-50 mb-70">
         <div class="container">
-            <div class="row">
+            <div class="row g-3">
                 <nav class="col-12 breadcrumb" aria-label="breadcrumb">
                     <ol class="breadcrumb">
                       <!-- <li class="breadcrumb-item"><a href="index.html">Home</a></li>

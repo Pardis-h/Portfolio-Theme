@@ -56,7 +56,9 @@ aside {
     }
 } 
 .breadcrumb{
-    font-family: "unicons-line";
+    // font-family: "unicons-line";
+    // margin-top: 0;
+    margin-bottom: 8px;
     --bs-breadcrumb-divider: '\eb9f';
     a{
         transition: .5s ease;

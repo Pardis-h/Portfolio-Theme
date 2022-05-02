@@ -6,7 +6,7 @@ if (have_posts()) {
         <!-- Single Blog Start -->
         <div class="container-fluid blog pl-custom pt-50">
             <div class="container">
-                <div class="row">
+                <div class="row g-3">
                     <nav class="col-12 breadcrumb" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <!-- <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -15,7 +15,7 @@ if (have_posts()) {
                             <?php custom_breadcrumbs(); ?>
                         </ol>
                     </nav>
-                    <section class="col-12 col-lg-8">
+                    <section class="col-12 <?php if (is_active_sidebar('post-single-sidebar')) :?>col-lg-8 order-1 order-lg-0<?php endif; ?> mb-3">
                         <article class="blog-content">
                             <span class="tag">
                             <?php
@@ -38,8 +38,8 @@ if (have_posts()) {
                             <?php the_content(); ?>
                         </article>
                     </section>
-                    <?php if (is_active_sidebar('posts-archive-sidebar')) {
-                        dynamic_sidebar('posts-archive-sidebar');
+                    <?php if (is_active_sidebar('post-single-sidebar')) {
+                        dynamic_sidebar('post-single-sidebar');
                     } ?>
                 </div>
             </div>

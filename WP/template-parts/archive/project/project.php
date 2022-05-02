@@ -9,7 +9,7 @@
                 <h2 class="section-title">My Portfolio</h2>
                 <p class="section-desc">A small gallery of my recent project</p>
             </div>
-            <div class="col-12 <?php if (is_active_sidebar('projects-archive-sidebar')) :?>col-lg-8 <?php endif; ?>">
+            <div class="col-12 <?php if (is_active_sidebar('projects-archive-sidebar')) :?>col-lg-8 order-1 order-lg-0<?php endif; ?>">
                     <div class="row g-4">
                         <?php echo get_template_part('template-parts/archive/project/project-loop'); ?>
                     </div>

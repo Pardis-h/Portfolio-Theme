@@ -183,6 +183,10 @@ h1, h2 {
   margin-bottom: 70px;
 }
 
+.mb-100 {
+  margin-bottom: 70px;
+}
+
 .pt-25 {
   padding-top: 25px;
 }
@@ -258,13 +262,12 @@ h1, h2 {
 }
 
 #darkBtn {
-  position: fixed;
+  position: absolute;
   z-index: 3;
   top: .5rem;
   left: 1rem;
   color: gray;
   cursor: pointer;
-  position: relative;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -396,6 +399,113 @@ h1, h2 {
   color: #8d8d8d !important;
 }
 
+@media screen and (max-width: 991px) {
+  #hero-section {
+    padding-top: .5rem;
+  }
+  #darkBtn {
+    right: 4rem;
+    left: unset;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-desc {
+    font-size: 1rem;
+  }
+  .section-title, .section-title-2 {
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+  }
+  .section-desc {
+    font-size: .9rem;
+  }
+  .bg-text-custom, .bg-text-custom-2, .bg-text-custom-3, .bg-text-custom-4, .bg-text-custom-5 {
+    font-size: 40px;
+    line-height: 2;
+  }
+  .custom-btn {
+    font-size: .8rem;
+  }
+  .bg-text-custom-5 {
+    left: 51%;
+  }
+  .pt-25 {
+    padding-top: 12px;
+  }
+  .pt-50 {
+    padding-top: 25px;
+  }
+  .pt-70 {
+    padding-top: 35px;
+  }
+  .mb-70 {
+    margin-bottom: 35px;
+  }
+  .mb-100 {
+    margin-bottom: 50px;
+  }
+  aside h5 {
+    font-size: 1.4rem !important;
+  }
+  .about-me .bg-text-custom-3 {
+    line-height: unset;
+  }
+  .bg-text-custom-2 {
+    top: -10%;
+  }
+  .job-experience {
+    padding: 10px !important;
+  }
+  .job-experience > li .company-name > p, .job-experience > li .job-details > p {
+    font-size: 1.2rem !important;
+  }
+  .job-experience > li .job-details ul li {
+    font-size: .9rem;
+  }
+  .job-experience > li .company-name {
+    padding-right: 10px;
+  }
+  .eduction {
+    padding: 10px !important;
+  }
+  .eduction li p {
+    font-size: 1.2rem !important;
+  }
+  .eduction li > div {
+    padding-right: 10px;
+  }
+  .contact-info {
+    padding: 10px !important;
+  }
+  .about-me .tagcloud {
+    margin-left: 0 !important;
+  }
+  .social {
+    display: none !important;
+  }
+  .social-2 {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    max-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .about-me .tagcloud {
+    max-width: 250px;
+    margin-left: 20% !important;
+  }
+}
+
 .navbar-brand {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -458,6 +568,30 @@ ul.social i:hover {
   color: #ba68c8;
 }
 
+.social-2 {
+  display: none;
+  width: 100%;
+  gap: .3rem;
+  padding: 0;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 30px !important;
+}
+
+.social-2 i {
+  font-size: 24px;
+  color: #989898;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.social-2 i:hover {
+  color: #ba68c8;
+}
+
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link {
   color: #ba68c8;
@@ -474,10 +608,6 @@ ul.social i:hover {
 
 .text-dark-custom .navbar-brand p:first-of-type {
   color: gray;
-}
-
-.text-dark-custom .navbar-brand {
-  border-bottom: 1px solid #eee !important;
 }
 
 @media screen and (min-width: 992px) {
@@ -517,6 +647,9 @@ ul.social i:hover {
   }
   .pl-custom {
     padding-left: 13.5rem;
+  }
+  .text-dark-custom .navbar-brand {
+    border-bottom: 1px solid #eee !important;
   }
 }
 
@@ -1030,7 +1163,7 @@ aside ul li:hover:nth-child(odd) a {
 }
 
 .breadcrumb {
-  /* font-family: "unicons-line"; */
+  margin-bottom: 8px;
   --bs-breadcrumb-divider: '\eb9f';
 }
 

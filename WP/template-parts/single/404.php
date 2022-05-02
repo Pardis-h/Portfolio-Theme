@@ -1,7 +1,7 @@
 <div class="container-fluid pl-custom pt-2 mb-5 err-404">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-5">
+            <div class="row g-3">
+                <div class="col-12 col-lg-5 d-flex justify-content-center flex-column">
                     <p class="section-title"><?php _e('Page Not Found','bp-b') ?></p>
                     <!-- <p class="desc-title">Search here :</p> -->
                     <form class="custom-search d-flex flex-column search-404" action="<?php echo home_url(); ?>" method="get">

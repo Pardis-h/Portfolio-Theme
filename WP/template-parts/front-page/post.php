@@ -16,7 +16,7 @@ if ( $query_data  ) {
     $post_id = $data->ID;
 
     ?>
-        <article class="col-12 col-lg-4">
+        <article class="col-12 col-lg-4 mb-3">
             <div class="card blog-card text-white bg-dark">
                 <div class="card-body">
                     <span>

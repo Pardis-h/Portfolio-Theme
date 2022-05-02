@@ -73,7 +73,7 @@ function myp_register_sidebars()
             'after_widget' => '',
             'before_title' => '<h5 class="widgettitle">',
             'after_title' => '</h5>',
-            'before_sidebar' => '<aside class="col-12 col-lg-4 mt-m60">',
+            'before_sidebar' => '<aside class="col-12 col-lg-4 mt-m60 order-0 order-lg-2 mb-4">',
             'after_sidebar' => '</aside>'
         )
     );
@@ -86,10 +86,26 @@ function myp_register_sidebars()
             'after_widget' => '',
             'before_title' => '<h5 class="widgettitle">',
             'after_title' => '</h5>',
-            'before_sidebar' => '<aside class="col-12 col-lg-4 mt-m60">',
+            'before_sidebar' => '<aside class="col-12 col-lg-4 mt-m60 order-0 order-lg-2 mb-4">',
             'after_sidebar' => '</aside>'
         )
     );
+
+    // Sinle Sidebar
+    register_sidebar(
+        array(
+            'name' => __('Post Single Sidebar', 'pas_mph'),
+            'id' => 'post-single-sidebar',
+            'description' => __('Widgets in this area will be shown on archive page.', 'pas_mph'),
+            'before_widget' => '',
+            'after_widget' => '',
+            'before_title' => '<h5 class="widgettitle">',
+            'after_title' => '</h5>',
+            'before_sidebar' => '<aside class="col-12 col-lg-4 mt-m60 order-0 order-lg-2 mb-4">',
+            'after_sidebar' => '</aside>'
+        )
+    );
+
 }
 add_action('widgets_init', 'myp_register_sidebars');
 

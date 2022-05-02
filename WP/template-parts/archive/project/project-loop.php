@@ -4,7 +4,7 @@
                 the_post();
                 $cat = get_the_terms(get_the_ID(), 'project_categories');
                 ?>
-            <div class="col-12 <?php if (is_active_sidebar('projects-archive-sidebar')) :?>col-lg-6 <?php endif; ?> <?php if (!(is_active_sidebar('projects-archive-sidebar'))) :?>col-lg-4 <?php endif; ?>">
+            <div class="col-12 <?php if (is_active_sidebar('projects-archive-sidebar')) :?>col-md-6 <?php endif; ?> <?php if (!(is_active_sidebar('projects-archive-sidebar'))) :?>col-lg-4 <?php endif; ?>">
                 <div class="card project-card ">
                     <div class="card-body">
                         <div>
