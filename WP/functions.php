@@ -31,6 +31,8 @@ add_action('after_setup_theme', 'myp_theme_setup');
 require 'widgets/widgets.php';
 require 'inc/post-types.php';
 require 'inc/taxonomies.php';
+require 'inc/option-panel.php';
+// require 'inc/option-panel-sample.php';
 
 //Styles and Scripts
 function myp_add_theme_styles()
@@ -109,6 +111,16 @@ function myp_register_sidebars()
 }
 add_action('widgets_init', 'myp_register_sidebars');
 
+// Get AFC
+function myp_get_acf_field($name, $option = null)
+{
+    if (function_exists('get_field')) {
+        return get_field($name, $option);
+    } else {
+        return __('Install and Activate ACF Plugin', 'pas_mph');
+    }
+}
+
 // Link of Custom Post Type Archive on Menu
 function myp_additional_active_item_classes($classes = array(), $menu_item = false){
     global $wp_query;
@@ -139,6 +151,13 @@ function myp_get_post_thumbnail_url($post_id = null): string
         //#option-panel : change theme placeholder image for posts
         return 'url';
     }
+}
+
+// Get Option
+function myp_get_option( $name, $default = null ) {
+	$option = get_option( 'pas_mph_' . get_locale() );
+
+	return ( isset( $option[ $name ] ) && ! empty( $option[ $name ] ) ) ? $option[ $name ] : $default;
 }
 
 // Breadcrumbs

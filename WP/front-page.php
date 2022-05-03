@@ -7,23 +7,28 @@
             <div class="text-end position-absolute end-0 top-0">
                 <ul class="social-2">
                     <li>
-                        <a href="https://linkedin.com/in/pardis-haghdoust"><i class="uil uil-linkedin"></i></a>
+                        <a href="<?php echo myp_get_option('linkedin-url'); ?>"><i class="uil uil-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="https://github.com/Pardis-h"><i class="uil uil-github"></i></a>
+                        <a href="<?php echo myp_get_option('github-url'); ?>"><i class="uil uil-github"></i></a>
                     </li>
                     <li>
-                        <a href="https://instagram.com/pardis_haghdoust"><i class="uil uil-instagram"></i></a>
+                        <a href="<?php echo myp_get_option('intagram-url'); ?>"><i class="uil uil-instagram"></i></a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/iampardis_h"><i class="uil uil-twitter"></i></a>
+                        <a href="<?php echo myp_get_option('twitter-url'); ?>"><i class="uil uil-twitter"></i></a>
                     </li>
                 </ul>
             </div>
             <div class="row">
                 <div class="col-12 col-lg-6 d-flex flex-column justify-content-center ">
-                    <h1 class="hero-title mb-3">Hi,<br> I'm <span class="text-primary-color">P</span> ardis, <br> Web Developer</h1>
-                    <p class="hero-desc">Front End Developer / Wordpress Expert</p>
+                    <h1 class="hero-title mb-3">
+                        <?php echo myp_get_option('Hero-text_1'); ?>
+                        <br> <?php echo myp_get_option('Hero-text_2'); ?>
+                        <br> 
+                        <?php echo myp_get_option('Hero-text_3'); ?>
+                    </h1>
+                    <p class="hero-desc"><?php echo myp_get_option('Hero-desc'); ?></p>
                 </div>
                 <div class="col-12 col-lg-6">
                     
@@ -39,13 +44,15 @@
     <section class="container-fluid portfolio pl-custom mb-100 pt-50" id="portfolio">
         <div class="container">
             <div class="row g-3 position-relative">
-                <span class="bg-text-custom">Works.</span>
+                <span class="bg-text-custom"><?php echo myp_get_option('Portfolio-bg-text'); ?></span>
                 <div class="col-8 col-lg-9">
-                    <h2 class="section-title">My Portfolio</h2>
-                    <p class="section-desc">A small gallery of my recent project</p>
+                    <h2 class="section-title"><?php echo myp_get_option('Portfolio-title'); ?></h2>
+                    <p class="section-desc"><?php echo myp_get_option('Portfolio-desc'); ?></p>
                 </div>
                 <div class="col-4 col-lg-3 d-flex align-items-center justify-content-end">
-                    <a href="http://pardis-haghdoust.test/project/" class="custom-btn">See More!</a>
+                    <a href="<?php echo home_url();  ?>/project/" class="custom-btn">
+                        <?php echo myp_get_option('Portfolio-link-text'); ?>
+                    </a>
                 </div>
                 <?php 
                     get_template_part('template-parts/front-page/project');
@@ -60,11 +67,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-5 d-flex flex-column justify-content-center align-items-start">
-                    <h2 class="section-title-2">About Me</h2>
+                    <h2 class="section-title-2"><?php echo myp_get_option('About-title'); ?></h2>
                     <p class="section-desc">
-                        Passionate Front-End developer with over 2 years of experience. Extensively worked developing Responsive Web Applications. Strong experience in development of web applications for using HTML5, CSS3, Bootstrap, Sass, JavaScript, JQuery and Recently I've started learning React. Moderate knowledge and experience with WordPress development and theming. I'm always willing to learn new traits . I work well both independently and as part of a team.
+                    <?php echo myp_get_option('About-desc'); ?>
                     </p>
-                    <a href="http://pardis-haghdoust.test/about-me/" class="custom-btn">See More!</a>
+                    <a href="<?php echo home_url();  ?>/about-me/" class="custom-btn">
+                        <?php echo myp_get_option('About-link-text'); ?>
+                    </a>
                 </div>
                 <div class="col-12 col-lg-7 position-relative">
                     <span class="skill-content"></span>
@@ -78,16 +87,18 @@
     <section class="container-fluid blog pl-custom mb-70 pt-120" id="blog">
         <div class="container">
             <div class="row position-relative">
-                <span class="bg-text-custom-2">Blog.</span>
+                <span class="bg-text-custom-2"><?php echo myp_get_option('Blog-bg-text'); ?></span>
                 <div class="col-12">
-                    <h2 class="section-title">My Blog</h2>
-                    <p class="section-desc">blog posts</p>
+                    <h2 class="section-title"><?php echo myp_get_option('Blog-title'); ?></h2>
+                    <p class="section-desc"><?php echo myp_get_option('Blog-desc'); ?></p>
                 </div>
                 <?php 
                     get_template_part('template-parts/front-page/post');
                 ?>
                 <div class="col-12 text-center mt-3">
-                    <a href="http://pardis-haghdoust.test/blog/" class="custom-btn">See More</a>
+                    <a href="<?php echo home_url();  ?>/blog/" class="custom-btn">
+                    <?php echo myp_get_option('Blog-link-text'); ?>
+                    </a>
                 </div>
             </div>
         </div>
@@ -99,8 +110,8 @@
         <div class="container">
             <div class="row g-3">
                 <div class="col-12 col-lg-6 order-1 order-lg-0">
-                    <h2 class="section-title ">Contact Me</h2>
-                    <p class="section-desc">A small gallery of my recent project</p>
+                    <h2 class="section-title "><?php echo myp_get_option('Contact-title'); ?></h2>
+                    <p class="section-desc"><?php echo myp_get_option('Contact-desc'); ?></p>
                     <?php 
                         echo apply_shortcodes( '[contact-form-7 id="25" title="Contact"]' ); 
                     ?>

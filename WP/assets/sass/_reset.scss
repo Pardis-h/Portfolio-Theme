@@ -254,6 +254,22 @@ h1 ,h2 {
         top: 1rem;
     } 
 }
+.scroll-down{
+    position: relative;
+    top: 0;
+    animation: scrolldown .5s linear .5s infinite;
+}
+@keyframes scrolldown {
+    0%{
+        top: 0;
+    }
+    50%{
+        top: 5px;
+    }
+    100%{
+        top: 10px;
+    }
+}
 .btn-active::before{
     color: rgb(255, 251, 0);
 }
@@ -320,6 +336,14 @@ h1 ,h2 {
             color: #212529;
         }
     }
+    .nav-wrapper{
+        .navbar-toggler {
+            color: #212529;
+            .icon-bar{
+                background-color: #212529;
+            }
+        }
+    }
 }
 .ad-dark{
     color: #8d8d8d!important;
@@ -334,6 +358,9 @@ h1 ,h2 {
         right: 4rem;
         left: unset;
     }
+    .navbar-brand span{
+        font-size: 3.5rem!important;
+    }
     .hero-title{
         font-size: 2rem;
     }
@@ -347,9 +374,13 @@ h1 ,h2 {
     .section-desc{
         font-size: .9rem;
     }
-    .bg-text-custom, .bg-text-custom-2, .bg-text-custom-3, .bg-text-custom-4, .bg-text-custom-5{
+    .bg-text-custom, .bg-text-custom-2, .bg-text-custom-3, .bg-text-custom-4{
         font-size: 40px;
         line-height: 2;
+    }
+    .bg-text-custom-5{
+        font-size: 40px;
+        line-height: 5;
     }
     .custom-btn{
         font-size: .8rem;

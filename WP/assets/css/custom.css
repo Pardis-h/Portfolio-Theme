@@ -20,12 +20,7 @@ body{
 }
 
 /* Blog archive */
-/* .bg-text-custom-4 {
-    top: -73%;
-} */
-/* .bg-text-custom-4.position-static{
-    line-height: 0;
-} */
+
 .blog-card{
     height: 100%;
 }
@@ -135,4 +130,11 @@ aside{
     max-width: 100vw;
     min-height: 100vh;
     overflow: hidden;
+}
+
+/* About Me */
+.scroll-down-text{
+    color: #ba68c8;
+    margin-bottom: -10px;
+    font-size: .7rem;
 }

@@ -1,4 +1,8 @@
 <?php
+
+//medadata
+$demo_link = myp_get_acf_field('demo_link');
+
 //terms
 $cat = get_the_terms(get_the_ID(), 'project_categories');
 $cat_url = get_term_link($cat[0]->term_id);
@@ -30,7 +34,7 @@ $cat_url = get_term_link($cat[0]->term_id);
                     </span>
                     <h1><?php the_title() ?></h1>
                     <?php the_content(); ?>
-                    <a href="http://pardis-haghdoust.test/coming-soon" class="custom-btn">View Demo</a>
+                    <a href="<?php echo $demo_link; ?>" class="custom-btn">View Demo</a>
                 </div>
                 <div class="col-12 col-lg-7">
                 <?php if(has_post_thumbnail()){ ?>

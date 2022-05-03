@@ -43,6 +43,21 @@ ul.social {
         }
     }
 }
+ul.social3 {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    i{
+        font-size: 24px;
+        color: #989898;
+        transition:0.5s ease;
+        &:hover{
+            color: #ba68c8;
+        }
+    }
+}
 .social-2{
     display: none;
     width: 100%;
@@ -77,8 +92,52 @@ ul.social {
     .navbar-brand p:first-of-type{
         color: gray;
     }
-
 }
+.nav-wrapper{
+    // position: relative;
+    .navbar-toggler {
+        box-shadow: none;
+        border: none;
+        color: gray;
+        position: relative;
+        .icon-bar{
+            position: absolute;
+            display: block;
+            width: 35px;
+            height: 3px;
+            border-radius: 10px;
+            background-color: gray;
+            opacity: 1;
+            right: 0;
+            transition: .25s ease-in;
+            &:nth-child(1){
+                top: -3px;
+            }
+            &:nth-child(2){
+                top: 5px;
+            }
+            &:nth-child(3){
+                top: 13px;
+            }
+        }
+        .open{
+            &:nth-child(1){
+                top: 3px;
+                transform: rotate(135deg);
+            }
+            &:nth-child(2){
+                opacity: 0;
+                right: -60px;
+            }
+            &:nth-child(3){
+                top: 3px;
+                transform: rotate(-135deg);
+
+            }
+        }
+    }
+}
+
 @media screen and (min-width:992px) {
     .nav-header{
         width: 11rem;
@@ -120,5 +179,8 @@ ul.social {
 @media screen and (max-width:991px) {
     .navbar-brand p{
         display: none;
+    }
+    .bg-light-custom .nav-header, .bg-light-custom .project-card{
+        box-shadow: 0px 9px 5px 0px #00000008 !important;
     }
 }

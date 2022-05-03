@@ -1,3 +1,13 @@
+// Custom Burger
+document.getElementById('burger').addEventListener("click", function(){ 
+  let burger =document.getElementsByClassName("icon-bar");
+  if( burger.length > 0 ){
+    for( i in burger){
+      burger[i].classList.toggle('open');
+    }
+  }
+});
+
 // Skills Bars
 window.onscroll = function() {mySkillsBar()};
 function mySkillsBar() {

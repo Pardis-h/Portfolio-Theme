@@ -10,9 +10,9 @@ get_header('nonav'); ?>
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-sm-6 d-flex  justify-content-center flex-column">
-                    <h1 class="section-title">Coming Soon!</h1>
+                    <h1 class="section-title"><?php the_title(); ?></h1>
                     <p class="section-desc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis fugiat, quo rem incidunt totam officia velit aspernatur in error nobis labore delectus nostrum corrupti eum quibusdam sapiente recusandae dolorum libero.
+                        <?php echo get_the_content(); ?>
                     </p>
                 </div>
                 <div class="col-12 col-sm-6 ">
