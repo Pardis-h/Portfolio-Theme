@@ -12,17 +12,11 @@ if ( ! class_exists( 'Redux' ) ) {
 	return;
 }
 
-// This is your option name where all the Redux data is stored.
-$opt_name = 'pas_mph_' . get_locale();  // YOU MUST CHANGE THIS.  DO NOT USE 'redux_demo' IN YOUR PROJECT!!!
+$opt_name = 'pas_mph_' . get_locale();  
 
-// Uncomment to disable demo mode.
-/* Redux::disable_demo(); */  // phpcs:ignore Squiz.PHP.CommentedOutCode
 
 $dir = dirname( __FILE__ ) . DIRECTORY_SEPARATOR;
 
-/*
- * --> Used within different fields. Simply examples. Search for ACTUAL DECLARATION for field examples
- */
 
 
 // Used to except HTML tags in description arguments where esc_html would remove.
@@ -84,7 +78,7 @@ $args = array(
 	'global_variable'           => $opt_name,
 
 	// Show the time the page took to load, etc. (forced on while on localhost or when WP_DEBUG is enabled).
-	'dev_mode'                  => true,
+	'dev_mode'                  => false,
 
 	// Enable basic customizer support.
 	'customizer'                => true,

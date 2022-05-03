@@ -32,7 +32,8 @@ require 'widgets/widgets.php';
 require 'inc/post-types.php';
 require 'inc/taxonomies.php';
 require 'inc/option-panel.php';
-// require 'inc/option-panel-sample.php';
+require 'inc/acf.php';
+require 'inc/tgm/myportfolio.php';
 
 //Styles and Scripts
 function myp_add_theme_styles()
