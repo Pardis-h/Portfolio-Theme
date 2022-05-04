@@ -7,7 +7,7 @@
     - The "symbol *" part is to solve Firefox SVG sprite bug
  */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700;1,800&display=swap");
-*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *):not(pre):not(code)) {
   all: unset;
   display: revert;
 }
@@ -306,8 +306,8 @@ h1, h2 {
 .scroll-down {
   position: relative;
   top: 0;
-  -webkit-animation: scrolldown .65s linear infinite;
-          animation: scrolldown .65s linear infinite;
+  -webkit-animation: scrolldown .5s linear .5s infinite;
+          animation: scrolldown .5s linear .5s infinite;
 }
 
 @-webkit-keyframes scrolldown {
@@ -1295,6 +1295,165 @@ aside ul li:hover:nth-child(odd) a {
 
 .breadcrumb a:hover {
   color: #ba68c8;
+}
+
+.blog-content {
+  margin-bottom: 50px;
+}
+
+.blog-content img {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.blog-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.blog-content h2 {
+  color: #FF5677;
+  font-weight: 600;
+}
+
+.blog-content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 2;
+}
+
+.blog-content p a {
+  color: #ba68c8;
+}
+
+.blog-content .code > span:not(.tag) {
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+  background-color: #151f28;
+  color: #ba68c8;
+  position: relative;
+  top: 1rem;
+}
+
+.blog-content .code code {
+  direction: ltr;
+  border-radius: 0 5px 5px 5px;
+}
+
+.blog-content .code pre {
+  margin-bottom: 0rem;
+}
+
+.blog-content .code .hljs {
+  background-color: #151f28;
+  color: #fff;
+}
+
+.blog-content .code .hljs-comment, .blog-content .code .hljs-deletion, .blog-content .code .hljs-meta, .blog-content .code .hljs-quote {
+  color: #6c8998;
+}
+
+.blog-content .code .hljs-selector-pseudo, .blog-content .code .hljs-keyword, .blog-content .code .hljs-link, .blog-content .code .hljs-literal, .blog-content .code .hljs-section, .blog-content .code .hljs-selector-tag {
+  color: #C653FF;
+}
+
+.blog-content .code .hljs-addition, .blog-content .code .hljs-attribute, .blog-content .code .hljs-built_in, .blog-content .code .hljs-bullet, .blog-content .code .hljs-name, .blog-content .code .hljs-string, .blog-content .code .hljs-symbol, .blog-content .code .hljs-template-tag, .blog-content .code .hljs-template-variable, .blog-content .code .hljs-title, .blog-content .code .hljs-type, .blog-content .code .hljs-variable {
+  color: #FF39A8;
+}
+
+.blog-content .note {
+  margin-bottom: 2.5rem;
+  background-color: #182635;
+  padding: 20px;
+  border-radius: 0 8px 8px 0;
+  border-left: 2px solid #ba68c8;
+  position: relative;
+}
+
+.blog-content .note p:last-of-type {
+  margin-bottom: 0;
+}
+
+.blog-content .note::before {
+  content: '\e9ad';
+  font-family: "unicons-line";
+  color: #ba68c8;
+  font-size: 24px;
+  background-color: #212529;
+  padding: 5px 10px;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+  position: absolute;
+  left: -22px;
+  top: -20px;
+}
+
+.blog-content .note.correct {
+  background-color: rgba(0, 204, 136, 0.102);
+  border-color: #00cc88;
+}
+
+.blog-content .note.correct::before {
+  content: '\e9c2';
+  color: #00cc88;
+}
+
+.blog-content .note.correct .code .hljs {
+  background-color: #0c2322;
+}
+
+.blog-content .note.correct .code > span:not(.tag) {
+  background-color: #0c2322;
+  color: #00cc88;
+}
+
+.bg-light-custom .blog-content .code .hljs {
+  background-color: #f5f6f9;
+  color: black;
+}
+
+.bg-light-custom .blog-content .code > span:not(.tag) {
+  background-color: #f5f6f9;
+}
+
+.bg-light-custom .blog-content .note {
+  background-color: #e6dff6;
+}
+
+.bg-light-custom .blog-content .note .code .hljs, .bg-light-custom .blog-content .note .code > span:not(.tag) {
+  background-color: #f5f6f9;
+}
+
+.bg-light-custom .blog-content .note::before {
+  background-color: #fff;
+}
+
+.bg-light-custom .blog-content .note.correct {
+  background-color: rgba(0, 204, 136, 0.102);
+}
+
+.bg-light-custom .blog-content .note.correct .code .hljs {
+  background-color: #f5f6f9;
+}
+
+.bg-light-custom .blog-content .note.correct .code > span:not(.tag) {
+  background-color: #f5f6f9;
+}
+
+.bg-light-custom .blog-content .note.correct::before {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .blog-content h1 {
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+  }
+  .blog-content p {
+    font-size: .9rem;
+  }
 }
 
 .contact-me form input, .contact-me form textarea {
