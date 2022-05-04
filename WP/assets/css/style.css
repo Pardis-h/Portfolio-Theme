@@ -1340,7 +1340,7 @@ aside ul li:hover:nth-child(odd) a {
   background-color: #151f28;
   color: var(--theme-primary);
   position: relative;
-  top: 1rem;
+  top: 2.8rem;
 }
 
 .blog-content .code code {
