@@ -350,6 +350,7 @@ Redux::set_section(
 		]
 	)
 );
+// -> START Social
 Redux::set_section(
 	$opt_name,
 	array(
@@ -385,6 +386,7 @@ Redux::set_section(
 		]
 	)
 );
+// -> START About Me
 Redux::set_section(
 	$opt_name,
 	array(
@@ -552,6 +554,42 @@ Redux::set_section(
 				'title'    => esc_html__( 'Contact Section Phone Number', 'pas_mph' ),
 				'default'  => '09356459036',
 			),
+		]
+	)
+);
+// -> START COLORS
+Redux::set_section(
+	$opt_name,
+	array(
+		'title'            => esc_html__( 'Colors', 'pas_mph' ),
+		'id'               => 'colors',
+		'customizer_width' => '400px',
+		'icon'             => 'el el-brush',
+		'fields'           => [
+			array(
+				'id'          => 'primaryy-color',
+				'type'        => 'color',
+				'title'       => esc_html__( 'Primary Site Color', 'pas_mph' ),
+				'default'     => '#ba68c8',
+				'color_alpha' => true,
+				'output'      => array( '--theme-primary' => ':root' ),
+			),
+			array(
+				'id'          => 'secondary-color',
+				'type'        => 'color',
+				'title'       => esc_html__( 'Secondary Site Color', 'pas_mph' ),
+				'default'     => '#3FA796',
+				'color_alpha' => true,
+				'output'      => array( '--theme-secondary' => ':root' ),
+			),
+			array(
+				'id'          => 'third-color',
+				'type'        => 'color',
+				'title'       => esc_html__( 'Third Site Color', 'pas_mph' ),
+				'default'     => '#FF5677',
+				'color_alpha' => true,
+				'output'      => array( '--theme-third' => ':root' ),
+			)
 		]
 	)
 );

@@ -18,22 +18,22 @@
 }  
 
 .blog article:nth-child(odd) .blog-card{
-    border-top-color: #3FA796;
+    border-top-color: $secondary-color;
     span{
-        color: #3FA796;
+        color: $secondary-color;
     }
 }
 .blog article:nth-of-type(even) .blog-card{
-    border-top-color: #FF5677;
+    border-top-color: $third-color;
     span{
-        color: #FF5677;
+        color: $third-color;
     }
 }
 
 aside {
     h5{
         font-size: 2rem;
-        color: #ba68c8;
+        color: $primary-color;
         margin-bottom: 1rem;
     }
     ul {
@@ -47,10 +47,10 @@ aside {
         }
         li:hover{
             &:nth-child(even) a{
-                color: #FF5677;
+                color: $third-color;
             }
             &:nth-child(odd) a{
-                color: #3FA796;
+                color: $secondary-color;
             }
         }
     }
@@ -63,7 +63,7 @@ aside {
     a{
         transition: .5s ease;
         &:hover{
-            color: #ba68c8;
+            color: $primary-color;
         }
     }
 }
@@ -80,7 +80,7 @@ aside {
         font-weight: 500;
     }
     h2{
-        color: #FF5677;
+        color: $third-color;
         font-weight: 600;
     }
     p{
@@ -89,7 +89,7 @@ aside {
         margin-bottom: 1.5rem;
         line-height: 2;
         a{
-            color: #ba68c8;
+            color: $primary-color;
         }
     }
     .code{
@@ -97,7 +97,7 @@ aside {
             border-radius: 5px 5px 0 0;
             padding: 10px;
             background-color: #151f28;
-            color: #ba68c8;
+            color: $primary-color;
             position: relative;
             top: 1rem;
         }
@@ -129,7 +129,7 @@ aside {
         // color: #fff;
         padding: 20px;
         border-radius:  0 8px 8px 0;
-        border-left: 2px solid #ba68c8;
+        border-left: 2px solid $primary-color;
         position: relative;
         p:last-of-type{
             margin-bottom: 0;
@@ -137,7 +137,7 @@ aside {
         &::before{
             content: '\e9ad';
             font-family: "unicons-line";
-            color: #ba68c8;
+            color: $primary-color;
             font-size: 24px;
             background-color: #212529;
             padding: 5px 10px;

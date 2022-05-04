@@ -96,7 +96,7 @@ h1 ,h2 {
 
 // Colors
 .text-primary-color{
-    color: #ba68c8;
+    color: $primary-color;
     // font-style: italic;
     margin-right: -10px;
 }
@@ -109,7 +109,7 @@ h1 ,h2 {
     font-size: 1.2rem;
 }
 .section-title,.section-title-2{
-    color: #ba68c8;
+    color: $primary-color;
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -139,24 +139,24 @@ h1 ,h2 {
     left: 11%;
     right: unset;
     top: -27%;
-    -webkit-text-stroke: 1px #ba68c8;
+    -webkit-text-stroke: 1px $primary-color;
 }
 .bg-text-custom-3 {
     right: unset;
     top: -19%;
-    -webkit-text-stroke: 1px #ba68c8;
+    -webkit-text-stroke: 1px $primary-color;
 }
 .bg-text-custom-4 {
     left: -1%;
     right: unset;
     top: -28%;
-    -webkit-text-stroke: 1px #ba68c8;
+    -webkit-text-stroke: 1px $primary-color;
 }
 .bg-text-custom-5 {
     left: 24%;
     right: unset;
     top: -4%;
-    -webkit-text-stroke: 1px #ba68c8;
+    -webkit-text-stroke: 1px $primary-color;
 }
 // Margin and Padding
 .mb-70{
@@ -186,8 +186,8 @@ h1 ,h2 {
 .custom-btn{
     padding: 12px 20px;
     border-radius: 5px;
-    border: 1px solid #ba68c8;
-    color: #ba68c8;
+    border: 1px solid $primary-color;
+    color: $primary-color;
     display: inline-block;
     vertical-align: middle;
     transform: perspective(1px) translateZ(0);
@@ -208,7 +208,7 @@ h1 ,h2 {
         left: 0;
         right: 0;
         bottom: 0;
-        background: #ba68c8;
+        background: $primary-color;
         transform: scaleX(0);
         transform-origin: 0 50%;
         transition-property: transform;
@@ -257,7 +257,7 @@ h1 ,h2 {
 .scroll-down{
     i{
         font-size: 32px;
-        color: #ba68c8;
+        color: $primary-color;
     }
 }
 // Coming soon
@@ -304,7 +304,7 @@ h1 ,h2 {
         color: #212529;
     }
     .bg-text-custom{
-        color: #ba68c8;
+        color: $primary-color;
     }
     .about-me .tagcloud--item:hover{
         color: #8d8d8d!important;

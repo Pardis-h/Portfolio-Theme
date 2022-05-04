@@ -10,7 +10,8 @@
         "../sass/_about-me.scss",
         "../sass/_portfolio.scss",
         "../sass/_blog-post.scss",
-        "../sass/_contact.scss"
+        "../sass/_contact.scss",
+        "../sass/_colors.scss"
     ],
     "names": [],
     "file": "style.css"

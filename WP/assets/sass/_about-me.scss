@@ -141,14 +141,14 @@
         font-weight: 400;
     }
     h3{
-        background-color: #ba68c8;
+        background-color: $primary-color;
         color: #fff;
         padding: 12px 20px;
     }
 }
 .visit,.section-desc{
     a{
-        color: #ba68c8;
+        color: $primary-color;
     }
 }
 .job-experience{
@@ -215,7 +215,7 @@
 .contact-info{
     padding: 50px;
     ul.social i:hover{
-        color: #3FA796;
+        color: $secondary-color;
     }
 }
 .contact-list{
@@ -241,10 +241,10 @@
             height: 2px;
         }
         &:nth-child(odd) .progress-bar{
-            background-color: #FF5677;
+            background-color: $third-color;
         }
         &:nth-child(even) .progress-bar{
-            background-color: #3FA796;
+            background-color: $secondary-color;
         }
     }
 }

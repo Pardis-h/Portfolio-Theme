@@ -6,7 +6,7 @@
         padding: 12px 20px;
         transition: ease;
         &:focus{
-            border-color: #ba68c8;
+            border-color: $primary-color;
             background-color: #9a9e9f7a;
             box-shadow: 0 0 8px 3px #bb69c940;
             &::placeholder{
